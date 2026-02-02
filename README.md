@@ -24,8 +24,9 @@ Create a word cloud to visualize common words in email subjects or messages.
 Find the top email senders and recipients. 
 Depending on your dataset, you can explore further, analyze sentiment, perform network analysis, or 
 any other relevant analysis to gain insights from your email data. 
-#Program: 
-''' # Import necessary libraries 
+# Program: 
+
+'''# Import necessary libraries 
 import pandas as pd 
 import matplotlib.pyplot as plt 
 import seaborn as sns 
@@ -67,5 +68,7 @@ plt.show()'''
 <img width="486" height="529" alt="Screenshot 2026-02-02 202719" src="https://github.com/user-attachments/assets/ddbf8ce1-4829-4af7-bb1a-fd4b80be6bfa" />
 
 <img width="515" height="456" alt="Screenshot 2026-02-02 202809" src="https://github.com/user-attachments/assets/ea82192a-b464-404b-a1ca-5737293ccda9" />
+
+
 # RESULT: 
 Thus the above working with numpy, pandas, matplotlib has been completed successfully. 
