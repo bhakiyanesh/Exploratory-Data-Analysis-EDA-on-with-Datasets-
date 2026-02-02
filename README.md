@@ -26,8 +26,40 @@ Depending on your dataset, you can explore further, analyze sentiment, perform n
 any other relevant analysis to gain insights from your email data. 
 # Program: 
 
-'''# Import necessary libraries 
-import pandas as pd '''
+'''python
+# Import necessary libraries 
+import pandas as pd 
+import matplotlib.pyplot as plt 
+import seaborn as sns 
+# Load the dataset 
+df = pd.read_csv('D:\ARCHANA\dxv\LAB\DXV\Emaildataset.csv') 
+# Display basic information about the dataset 
+print(df.info()) 
+# Display the first few rows of the dataset 
+print(df.head()) 
+# Descriptive statistics 
+print(df.describe()) 
+# Check for missing values 
+print(df.isnull().sum()) 
+# Visualize the distribution of numerical variables 
+sns.pairplot(df) 
+plt.show() 
+# Visualize the distribution of categorical variables 
+sns.countplot(x='label', data=df) 
+plt.show() 
+# Correlation matrix for numerical variables 
+correlation_matrix = df.corr() 
+sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm') 
+plt.show() 
+# Word cloud for text data (if you have a column with text data) 
+from wordcloud import WordCloud 
+text_data = ' '.join(df['text_column']) 
+wordcloud = WordCloud(width=800, height=400, random_state=21, 
+max_font_size=110).generate(text_data) 
+plt.figure(figsize=(10, 7)) 
+plt.imshow(wordcloud, interpolation="bilinear") 
+plt.axis('off') 
+plt.show() '''
 # Output
 
 <img width="627" height="416" alt="Screenshot 2026-02-02 202551" src="https://github.com/user-attachments/assets/d2c88cc9-50b8-40b7-890f-a61e1d029ad9" />
