@@ -26,7 +26,7 @@ Depending on your dataset, you can explore further, analyze sentiment, perform n
 any other relevant analysis to gain insights from your email data. 
 # Program: 
 
-'''python
+```python
 # Import necessary libraries 
 import pandas as pd 
 import matplotlib.pyplot as plt 
@@ -59,7 +59,9 @@ max_font_size=110).generate(text_data)
 plt.figure(figsize=(10, 7)) 
 plt.imshow(wordcloud, interpolation="bilinear") 
 plt.axis('off') 
-plt.show() '''
+plt.show()
+```
+
 # Output
 
 <img width="627" height="416" alt="Screenshot 2026-02-02 202551" src="https://github.com/user-attachments/assets/d2c88cc9-50b8-40b7-890f-a61e1d029ad9" />
